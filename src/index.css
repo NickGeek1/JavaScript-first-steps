@@ -5,9 +5,95 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gray; 
+  display: flex;
+  justify-content:space-evenly;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.blocks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.first-block { 
+  margin: 0 auto;
+  width: 300px; 
+  height: 450px; 
+  padding: 70px 40px; 
+  background-color: white; 
+} 
+
+.task__title { 
+  font-size: 14px; 
+  font-weight: normal; 
+  color: grey; 
+}     
+
+.task-list { 
+  margin-top: 30px; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 50%; 
+  justify-content: space-between; 
+} 
+
+.modal { 
+  visibility: hidden;
+} 
+
+.modal__opened { 
+  min-width: 300px; 
+  min-height: 450px; 
+  padding: 70px 40px; 
+  background-color: white; 
+  visibility: visible; 
+  display: flex;
+  flex-direction: column;
+} 
+
+.modal-text { 
+  background: #fff; 
+  width: 280px; 
+  font-size: 14px; 
+  padding: 6px 6px 4px; 
+  border: 1px solid #bcbcc4; 
+  border-radius: 15px; 
+  margin: 0 auto; 
+  font-size: 12px; 
+  line-height: 1.5; 
+  font-weight: 400; 
+} 
+
+.modal-button { 
+  width: 100px; 
+  height: 25px; 
+  margin: 20px auto;
+} 
+
+.result { 
+  background: #fff; 
+  max-width: 280px; 
+  font-size: 14px; 
+  padding: 6px 6px 4px; 
+  border: 1px solid #bcbcc4; 
+  border-radius: 15px; 
+  font-size: 12px; 
+  line-height: 1.5; 
+  font-weight: 400; 
+}
+
+.enter-space {
+  background: #fff; 
+  max-width: 280px; 
+  font-size: 14px; 
+  padding: 6px 6px 4px; 
+  border: 1px solid #bcbcc4; 
+  border-radius: 15px; 
+  font-size: 12px; 
+  line-height: 1.5; 
+  font-weight: 400;
+}
+
+.form__task-text {
+  padding-left: 5px;
 }
